@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dr. Salah Qasim Mohammed Al-Ahdal - Professional Neon CV | السيرة الذاتية الاحترافية للدكتور صلاح الأهدل">
+  <meta name="keywords" content="Dr Salah Al-Ahdal, صلاح الأهدل, Hospital Management, Medical Laboratory, Digital Health, Yemen">
+  <meta name="author" content="Dr. Salah Al-Ahdal">
+  <title>د. صلاح الأهدل | Dr. Salah Al-Ahdal - Global Professional CV</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+:root {
+  --neon-cyan: #00f3ff;
+  --neon-magenta: #ff00ff;
+  --neon-lime: #39ff14;
+  --neon-gold: #ffd700;
+  --neon-orange: #ff9d00;
+  --neon-purple: #b026ff;
+  --neon-pink: #ff1493;
+  --dark-bg: #020202;
+  --darker-bg: #0a0a0f;
+  --card-bg: rgba(12, 12, 20, 0.9);
+  --glass: rgba(255, 255, 255, 0.02);
+  --border-glass: rgba(255, 255, 255, 0.06);
+  --font-arabic: 'Cairo', sans-serif;
+  --font-tech: 'Orbitron', sans-serif;
+  --font-eng: 'Inter', 'Rajdhani', sans-serif;
+  --section-padding: 100px;
+  --card-radius: 20px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+body {
+  font-family: var(--font-arabic);
+  background: var(--dark-bg);
+  color: #e0e0e0;
+  overflow-x: hidden;
+  min-height: 100vh;
+  position: relative;
+  line-height: 1.7;
+}
+#particles-canvas {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--dark-bg); }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--neon-cyan), var(--neon-magenta));
+  border-radius: 3px;
+}
+.main-nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 999;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(2, 2, 2, 0.8);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-glass);
+  transition: all 0.3s ease;
+}
+.nav-logo {
+  font-family: var(--font-tech);
+  font-size: 1.2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, var(--neon-cyan), var(--neon-magenta));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 2px;
+}
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+.nav-links a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 5px 0;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 0; height: 2px;
+  background: linear-gradient(90deg, var(--neon-cyan), var(--neon-magenta));
+  transition: width 0.3s ease;
+}
+.nav-links a:hover { color: var(--neon-cyan); }
+.nav-links a:hover::after { width: 100%; }
+.lang-switch {
+  display: flex;
+  gap: 8px;
+  background: rgba(0,0,0,0.4);
+  padding: 6px 12px;
+  border-radius: 30px;
+  border: 1px solid var(--border-glass);
+  backdrop-filter: blur(10px);
+}
+.lang-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  color: #888;
+  padding: 6px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: var(--font-tech);
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.lang-btn:hover { color: #fff; }
+.lang-btn.active {
+  border-color: var(--neon-cyan);
+  background: linear-gradient(135deg, rgba(0, 243, 255, 0.15), rgba(255, 0, 255, 0.1));
+  box-shadow: 0 0 20px rgba(0, 243, 255, 0.3);
+  color: var(--neon-cyan);
+}
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  padding: 120px 2rem 2rem;
+  text-align: center;
+  background: radial-gradient(ellipse at center, rgba(0, 243, 255, 0.03) 0%, transparent 70%);
+}
+.hero-content {
+  max-width: 1000px;
+  animation: fadeInUp 1s ease;
+}
+.hero-profile {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 30px;
+}
+.profile-img {
+  width: 100%; height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 3px solid transparent;
+  background: linear-gradient(var(--dark-bg), var(--dark-bg)) padding-box,
+              linear-gradient(135deg, var(--neon-cyan), var(--neon-magenta), var(--neon-gold)) border-box;
+  box-shadow: 0 0 30px rgba(0, 243, 255, 0.2), inset 0 0 30px rgba(0, 243, 255, 0.05);
+  transition: all 0.4s ease;
+  aspect-ratio: 1 / 1;
+}
+.profile-ring {
+  position: absolute;
+  top: -10px; left: -10px;
+  right: -10px; bottom: -10px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: var(--neon-cyan);
+  border-right-color: var(--neon-magenta);
+  animation: spin 8s linear infinite;
+}
+.profile-ring-2 {
+  position: absolute;
+  top: -20px; left: -20px;
+  right: -20px; bottom: -20px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  border-bottom-color: var(--neon-lime);
+  border-left-color: var(--neon-gold);
+  animation: spin-reverse 12s linear infinite;
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 25px;
+  border: 1px solid var(--neon-lime);
+  border-radius: 30px;
+  font-size: 0.85rem;
+  color: var(--neon-lime);
+  margin-bottom: 25px;
+  animation: pulse-border 2s infinite;
+  font-family: var(--font-tech);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: rgba(57, 255, 20, 0.05);
+}
+.hero-badge::before {
+  content: '';
+  width: 8px; height: 8px;
+  background: var(--neon-lime);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--neon-lime);
+  animation: pulse-dot 2s infinite;
+}
+.hero-name {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, #fff 0%, var(--neon-cyan) 30%, var(--neon-magenta) 60%, var(--neon-gold) 100%);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 5s ease infinite;
+  font-family: var(--font-arabic);
+  letter-spacing: -1px;
+}
+.hero-title {
+  font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+  color: #aaa;
+  margin-bottom: 25px;
+  font-family: var(--font-eng);
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+.hero-divider {
+  width: 80px; height: 3px;
+  background: linear-gradient(90deg, var(--neon-cyan), var(--neon-magenta));
+  margin: 0 auto 25px;
+  border-radius: 3px;
+  box-shadow: 0 0 15px var(--neon-cyan);
+}
+.typing-container {
+  height: 45px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.typing-text {
+  font-family: var(--font-tech);
+  font-size: 1.1rem;
+  color: var(--neon-cyan);
+  border-right: 2px solid var(--neon-cyan);
+  padding-right: 5px;
+  animation: blink-cursor 0.8s infinite;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: 1px;
+}
+.hero-contact {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.contact-chip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  background: var(--glass);
+  border: 1px solid var(--border-glass);
+  border-radius: 30px;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  color: #ccc;
+  font-size: 0.9rem;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+.contact-chip::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+  transition: left 0.5s ease;
+}
+.contact-chip:hover::before { left: 100%; }
+.contact-chip:hover {
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 25px rgba(0, 243, 255, 0.2);
+  transform: translateY(-3px);
+  color: #fff;
+}
+.contact-chip i {
+  color: var(--neon-cyan);
+  font-size: 1rem;
+}
+.section {
+  position: relative;
+  z-index: 1;
+  padding: var(--section-padding) 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.section-label {
+  display: inline-block;
+  font-family: var(--font-tech);
+  font-size: 0.75rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--neon-cyan);
+  margin-bottom: 15px;
+  padding: 5px 15px;
+  border: 1px solid rgba(0, 243, 255, 0.3);
+  border-radius: 20px;
+  background: rgba(0, 243, 255, 0.05);
+}
+.section-title {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+.section-subtitle {
+  color: #777;
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: var(--font-eng);
+}
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+.edu-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--card-radius);
+  padding: 35px 30px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+}
+.edu-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 4px;
+  background: linear-gradient(90deg, var(--neon-cyan), var(--neon-magenta));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+}
+.edu-card:hover::before { transform: scaleX(1); }
+.edu-card::after {
+  content: '';
+  position: absolute;
+  top: -50%; left: -50%;
+  width: 200%; height: 200%;
+  background: radial-gradient(circle, rgba(0, 243, 255, 0.03) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.edu-card:hover::after { opacity: 1; }
+.edu-card:hover {
+  border-color: rgba(0, 243, 255, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 243, 255, 0.1);
+  transform: translateY(-8px);
+}
+.edu-icon {
+  width: 55px; height: 55px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  background: rgba(0, 243, 255, 0.08);
+  border: 1px solid rgba(0, 243, 255, 0.2);
+  box-shadow: 0 0 20px rgba(0, 243, 255, 0.1);
+  transition: all 0.3s ease;
+}
+.edu-card:hover .edu-icon {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 0 30px rgba(0, 243, 255, 0.2);
+}
+.edu-degree {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.edu-field {
+  font-size: 0.95rem;
+  color: #999;
+  line-height: 1.6;
+}
+.edu-card:nth-child(2) .edu-icon { border-color: rgba(255, 0, 255, 0.3); background: rgba(255, 0, 255, 0.08); box-shadow: 0 0 20px rgba(255, 0, 255, 0.1); }
+.edu-card:nth-child(2)::before { background: linear-gradient(90deg, var(--neon-magenta), var(--neon-purple)); }
+.edu-card:nth-child(3) .edu-icon { border-color: rgba(57, 255, 20, 0.3); background: rgba(57, 255, 20, 0.08); box-shadow: 0 0 20px rgba(57, 255, 20, 0.1); }
+.edu-card:nth-child(3)::before { background: linear-gradient(90deg, var(--neon-lime), var(--neon-cyan)); }
+.edu-card:nth-child(4) .edu-icon { border-color: rgba(255, 215, 0, 0.3); background: rgba(255, 215, 0, 0.08); box-shadow: 0 0 20px rgba(255, 215, 0, 0.1); }
+.edu-card:nth-child(4)::before { background: linear-gradient(90deg, var(--neon-gold), var(--neon-orange)); }
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+.skill-category {
+  background: var(--card-bg);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--card-radius);
+  padding: 35px;
+  backdrop-filter: blur(10px);
+  transition: all 0.4s ease;
+}
+.skill-category:hover {
+  border-color: rgba(0, 243, 255, 0.15);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+.skill-cat-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+}
+.skill-cat-title i {
+  font-size: 1.3rem;
+  color: var(--neon-cyan);
+}
+.skill-item { margin-bottom: 18px; }
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+.skill-name { color: #ccc; }
+.skill-percent {
+  color: var(--neon-cyan);
+  font-family: var(--font-tech);
+  font-weight: 600;
+}
+.skill-bar {
+  height: 6px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.skill-fill {
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(90deg, var(--neon-cyan), var(--neon-magenta));
+  position: relative;
+  width: 0;
+  transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.skill-fill::after {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  width: 20px; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3));
+  border-radius: 10px;
+}
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+}
+.achievement-card {
+  background: var(--card-bg);
+  border-radius: var(--card-radius);
+  overflow: hidden;
+  border: 1px solid var(--border-glass);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.achievement-card:hover {
+  transform: translateY(-10px) scale(1.01);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.4), 0 0 40px rgba(0, 243, 255, 0.08);
+  border-color: rgba(0, 243, 255, 0.15);
+}
+.ach-image-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(135deg, rgba(0,243,255,0.05), rgba(255,0,255,0.05));
+}
+.ach-image-wrapper::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to top, var(--card-bg), transparent);
+  pointer-events: none;
+}
+.ach-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-bottom: 1px solid var(--border-glass);
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), filter 0.4s ease;
+  filter: brightness(0.9) contrast(1.1);
+  aspect-ratio: 16 / 9;
+  max-height: 200px;
+  min-height: 160px;
+}
+.achievement-card:hover .ach-image {
+  transform: scale(1.08);
+  filter: brightness(1) contrast(1);
+}
+.ach-header {
+  padding: 25px 25px 15px;
+  position: relative;
+}
+.ach-icon {
+  width: 45px; height: 45px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  background: rgba(0, 243, 255, 0.08);
+  border: 1px solid rgba(0, 243, 255, 0.25);
+  box-shadow: 0 0 15px rgba(0, 243, 255, 0.15);
+  transition: all 0.3s ease;
+}
+.achievement-card:hover .ach-icon {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(0, 243, 255, 0.25);
+}
+.ach-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #fff;
+  line-height: 1.4;
+}
+.ach-subtitle {
+  font-size: 0.8rem;
+  color: #666;
+  font-family: var(--font-tech);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.ach-body {
+  padding: 10px 25px 20px;
+  color: #aaa;
+  line-height: 1.7;
+  font-size: 0.92rem;
+  flex-grow: 1;
+}
+.ach-footer {
+  padding: 0 25px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.ach-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.tag {
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #888;
+  font-family: var(--font-tech);
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+.tag:hover {
+  border-color: var(--neon-cyan);
+  color: var(--neon-cyan);
+  background: rgba(0, 243, 255, 0.05);
+}
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-family: var(--font-tech);
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.status-badge::before {
+  content: '';
+  width: 6px; height: 6px;
+  border-radius: 50%;
+}
+.status-progress {
+  background: rgba(255, 157, 0, 0.1);
+  border: 1px solid rgba(255, 157, 0, 0.3);
+  color: var(--neon-orange);
+}
+.status-progress::before {
+  background: var(--neon-orange);
+  box-shadow: 0 0 8px var(--neon-orange);
+  animation: pulse-dot 2s infinite;
+}
+.status-completed {
+  background: rgba(57, 255, 20, 0.1);
+  border: 1px solid rgba(57, 255, 20, 0.3);
+  color: var(--neon-lime);
+}
+.status-completed::before {
+  background: var(--neon-lime);
+  box-shadow: 0 0 8px var(--neon-lime);
+}
+.achievement-card:nth-child(2) .ach-icon { border-color: rgba(255, 0, 255, 0.25); background: rgba(255, 0, 255, 0.08); box-shadow: 0 0 15px rgba(255, 0, 255, 0.15); }
+.achievement-card:nth-child(2):hover { box-shadow: 0 25px 50px rgba(0,0,0,0.4), 0 0 40px rgba(255, 0, 255, 0.08); border-color: rgba(255, 0, 255, 0.15); }
+.achievement-card:nth-child(3) .ach-icon { border-color: rgba(57, 255, 20, 0.25); background: rgba(57, 255, 20, 0.08); box-shadow: 0 0 15px rgba(57, 255, 20, 0.15); }
+.achievement-card:nth-child(3):hover { box-shadow: 0 25px 50px rgba(0,0,0,0.4), 0 0 40px rgba(57, 255, 20, 0.08); border-color: rgba(57, 255, 20, 0.15); }
+.achievement-card:nth-child(4) .ach-icon { border-color: rgba(255, 215, 0, 0.25); background: rgba(255, 215, 0, 0.08); box-shadow: 0 0 15px rgba(255, 215, 0, 0.15); }
+.achievement-card:nth-child(4):hover { box-shadow: 0 25px 50px rgba(0,0,0,0.4), 0 0 40px rgba(255, 215, 0, 0.08); border-color: rgba(255, 215, 0, 0.15); }
+.achievement-card:nth-child(5) .ach-icon { border-color: rgba(255, 157, 0, 0.25); background: rgba(255, 157, 0, 0.08); box-shadow: 0 0 15px rgba(255, 157, 0, 0.15); }
+.achievement-card:nth-child(5):hover { box-shadow: 0 25px 50px rgba(0,0,0,0.4), 0 0 40px rgba(255, 157, 0, 0.08); border-color: rgba(255, 157, 0, 0.15); }
+.achievement-card:nth-child(6) .ach-icon { border-color: rgba(255, 0, 85, 0.25); background: rgba(255, 0, 85, 0.08); box-shadow: 0 0 15px rgba(255, 0, 85, 0.15); }
+.achievement-card:nth-child(6):hover { box-shadow: 0 25px 50px rgba(0,0,0,0.4), 0 0 40px rgba(255, 0, 85, 0.08); border-color: rgba(255, 0, 85, 0.15); }
+.achievement-card:nth-child(7) .ach-icon { border-color: rgba(0, 255, 170, 0.25); background: rgba(0, 255, 170, 0.08); box-shadow: 0 0 15px rgba(0, 255, 170, 0.15); }
+.achievement-card:nth-child(7):hover { box-shadow: 0 25px 50px rgba(0,0,0,0.4), 0 0 40px rgba(0, 255, 170, 0.08); border-color: rgba(0, 255, 170, 0.15); }
+.achievement-card:nth-child(8) .ach-icon { border-color: rgba(170, 0, 255, 0.25); background: rgba(170, 0, 255, 0.08); box-shadow: 0 0 15px rgba(170, 0, 255, 0.15); }
+.achievement-card:nth-child(8):hover { box-shadow: 0 25px 50px rgba(0,0,0,0.4), 0 0 40px rgba(170, 0, 255, 0.08); border-color: rgba(170, 0, 255, 0.15); }
+.contact-section {
+  background: linear-gradient(180deg, transparent, rgba(0, 243, 255, 0.02));
+  border-top: 1px solid var(--border-glass);
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.contact-card {
+  text-align: center;
+  padding: 45px 30px;
+  background: var(--card-bg);
+  border-radius: var(--card-radius);
+  border: 1px solid var(--border-glass);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.contact-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: radial-gradient(circle at center, rgba(0, 243, 255, 0.05) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.contact-card:hover::before { opacity: 1; }
+.contact-card:hover {
+  border-color: rgba(0, 243, 255, 0.2);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3), 0 0 30px rgba(0, 243, 255, 0.1);
+  transform: translateY(-8px);
+}
+.contact-card i {
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+  transition: transform 0.3s ease;
+}
+.contact-card:hover i { transform: scale(1.2); }
+.contact-card.whatsapp:hover {
+  border-color: rgba(57, 255, 20, 0.2);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3), 0 0 30px rgba(57, 255, 20, 0.1);
+}
+.contact-card.email:hover {
+  border-color: rgba(255, 0, 255, 0.2);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3), 0 0 30px rgba(255, 0, 255, 0.1);
+}
+.contact-label {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  position: relative;
+  z-index: 1;
+}
+.contact-value {
+  font-size: 0.95rem;
+  color: #888;
+  font-family: var(--font-tech);
+  direction: ltr;
+  position: relative;
+  z-index: 1;
+  letter-spacing: 0.5px;
+}
+.main-footer {
+  text-align: center;
+  padding: 50px 20px 30px;
+  color: #444;
+  font-size: 0.85rem;
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid var(--border-glass);
+  background: linear-gradient(180deg, transparent, rgba(0,0,0,0.5));
+}
+.footer-brand {
+  font-family: var(--font-tech);
+  font-size: 1.2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, var(--neon-cyan), var(--neon-magenta));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 15px;
+  letter-spacing: 3px;
+}
+.footer-tagline {
+  font-family: var(--font-tech);
+  font-size: 0.7rem;
+  color: #333;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+@keyframes pulse-border {
+  0%, 100% { box-shadow: 0 0 5px var(--neon-lime), inset 0 0 5px var(--neon-lime); border-color: var(--neon-lime); }
+  50% { box-shadow: 0 0 20px var(--neon-lime), inset 0 0 10px var(--neon-lime); border-color: rgba(57, 255, 20, 0.7); }
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.8); }
+}
+@keyframes blink-cursor {
+  0%, 100% { border-color: var(--neon-cyan); }
+  50% { border-color: transparent; }
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes spin-reverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.animate-on-scroll:nth-child(1) { transition-delay: 0.1s; }
+.animate-on-scroll:nth-child(2) { transition-delay: 0.2s; }
+.animate-on-scroll:nth-child(3) { transition-delay: 0.3s; }
+.animate-on-scroll:nth-child(4) { transition-delay: 0.4s; }
+.animate-on-scroll:nth-child(5) { transition-delay: 0.5s; }
+.animate-on-scroll:nth-child(6) { transition-delay: 0.6s; }
+.animate-on-scroll:nth-child(7) { transition-delay: 0.7s; }
+.animate-on-scroll:nth-child(8) { transition-delay: 0.8s; }
+body.lang-en {
+  direction: ltr;
+  font-family: var(--font-eng);
+}
+body.lang-en .hero-name {
+  font-family: var(--font-tech);
+  letter-spacing: 2px;
+}
+body.lang-en .section-title,
+body.lang-en .section-label {
+  font-family: var(--font-tech);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+body.lang-en .edu-degree,
+body.lang-en .ach-title,
+body.lang-en .contact-label,
+body.lang-en .skill-cat-title {
+  font-family: var(--font-eng);
+  font-weight: 600;
+}
+body.lang-en .nav-links { font-family: var(--font-eng); }
+.neon-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--neon-cyan), var(--neon-magenta), var(--neon-cyan), transparent);
+  margin: 0 auto;
+  max-width: 800px;
+  position: relative;
+  opacity: 0.3;
+}
+.neon-divider::after {
+  content: '';
+  position: absolute;
+  top: -3px; left: 50%;
+  transform: translateX(-50%);
+  width: 8px; height: 8px;
+  background: var(--neon-cyan);
+  border-radius: 50%;
+  box-shadow: 0 0 15px var(--neon-cyan), 0 0 30px var(--neon-cyan);
+}
+@media (max-width: 768px) {
+  .main-nav {
+    padding: 12px 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .nav-links { gap: 15px; }
+  .nav-links a { font-size: 0.8rem; }
+  .hero { padding-top: 140px; }
+  .hero-contact { flex-direction: column; align-items: center; }
+  .contact-chip { width: 100%; max-width: 300px; justify-content: center; }
+  .section { padding: 60px 15px; }
+  .achievements-grid { grid-template-columns: 1fr; }
+  .skills-grid { grid-template-columns: 1fr; }
+  .ach-image, .ach-image-wrapper { height: 160px; max-height: 160px; }
+  .hero-profile { width: 150px; height: 150px; }
+}
+@media (max-width: 480px) {
+  .ach-image, .ach-image-wrapper { height: 140px; max-height: 140px; }
+  .hero-profile { width: 130px; height: 130px; }
+}
+@media print {
+  #particles-canvas, .main-nav, .lang-switch, .profile-ring, .profile-ring-2 { display: none; }
+  body { background: #fff; color: #000; }
+  .hero-name { -webkit-text-fill-color: #000; color: #000; }
+  .section { padding: 30px 15px; }
+  .edu-card, .achievement-card, .skill-category, .contact-card {
+    border: 1px solid #ddd;
+    box-shadow: none;
+    break-inside: avoid;
+  }
+  .ach-image, .profile-img {
+    filter: none;
+    transform: none;
+    height: 150px;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <nav class="main-nav">
+    <div class="nav-logo">DR. SALAH</div>
+    <ul class="nav-links">
+      <li><a href="#about" data-ar="نبذة" data-en="About">نبذة</a></li>
+      <li><a href="#education" data-ar="المؤهلات" data-en="Education">المؤهلات</a></li>
+      <li><a href="#skills" data-ar="المهارات" data-en="Skills">المهارات</a></li>
+      <li><a href="#projects" data-ar="المشاريع" data-en="Projects">المشاريع</a></li>
+      <li><a href="#contact" data-ar="التواصل" data-en="Contact">التواصل</a></li>
+    </ul>
+    <div class="lang-switch">
+      <button class="lang-btn active" data-lang="ar" onclick="setLang('ar')">العربية</button>
+      <button class="lang-btn" data-lang="en" onclick="setLang('en')">English</button>
+    </div>
+  </nav>
+
+  <canvas id="particles-canvas"></canvas>
+
+  <section class="hero" id="about">
+    <div class="hero-content">
+      <div class="hero-profile">
+        <div class="profile-ring"></div>
+        <div class="profile-ring-2"></div>
+        <img src="images/profile.jpg" alt="Dr. Salah Al-Ahdal" class="profile-img" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,rgba(0,243,255,0.1),rgba(255,0,255,0.1))';this.parentElement.style.borderRadius='50%';this.parentElement.style.border='3px solid transparent';this.parentElement.style.backgroundClip='padding-box';this.parentElement.style.webkitBackgroundClip='padding-box';this.parentElement.style.borderImage='linear-gradient(135deg,var(--neon-cyan),var(--neon-magenta),var(--neon-gold)) 1';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;font-size:4rem;\'>👨‍⚕️</div>';">
+      </div>
+      <div class="hero-badge" data-ar="الدكتور صلاح قاسم محمد الأهدل" data-en="Dr. Salah Qasim Mohammed Al-Ahdal">الدكتور صلاح قاسم محمد الأهدل</div>
+      <h1 class="hero-name" data-ar="صلاح الأهدل" data-en="SALAH AL-AHDAL">صلاح الأهدل</h1>
+      <p class="hero-title" data-ar="إدارة المستشفيات · المختبرات · التطوير الصحي الرقمي" data-en="Hospital Management · Laboratory · Digital Health Development">إدارة المستشفيات · المختبرات · التطوير الصحي الرقمي</p>
+      <div class="hero-divider"></div>
+      <div class="typing-container"><span class="typing-text" id="typing-text"></span></div>
+      <div class="hero-contact">
+        <a href="mailto:Kaidngat4@gmail.com" class="contact-chip"><i class="fas fa-envelope"></i><span>Kaidngat4@gmail.com</span></a>
+        <a href="https://wa.me/967776572227" target="_blank" class="contact-chip"><i class="fab fa-whatsapp"></i><span dir="ltr">+967 776 572 227</span></a>
+        <a href="#" class="contact-chip" onclick="window.print();return false;"><i class="fas fa-print"></i><span data-ar="طباعة السيرة" data-en="Print CV">طباعة السيرة</span></a>
+      </div>
+    </div>
+  </section>
+
+  <div class="neon-divider"></div>
+
+  <section class="section" id="education">
+    <div class="section-header">
+      <span class="section-label" data-ar="الشهادات العلمية" data-en="Academic Credentials">الشهادات العلمية</span>
+      <h2 class="section-title" data-ar="المؤهلات العلمية" data-en="Education & Qualifications">المؤهلات العلمية</h2>
+      <p class="section-subtitle" data-ar="رحلة علمية متكاملة تجمع بين المختبرات والإدارة والطب" data-en="A comprehensive academic journey combining laboratory, management, and medicine">رحلة علمية متكاملة تجمع بين المختبرات والإدارة والطب</p>
+    </div>
+    <div class="edu-grid">
+      <div class="edu-card animate-on-scroll">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-degree" data-ar="بكالوريوس" data-en="Bachelor's Degree">بكالوريوس</div>
+        <div class="edu-field" data-ar="علوم المختبرات الطبية" data-en="Medical Laboratory Sciences">علوم المختبرات الطبية</div>
+      </div>
+      <div class="edu-card animate-on-scroll">
+        <div class="edu-icon">🏥</div>
+        <div class="edu-degree" data-ar="بكالوريوس" data-en="Bachelor's Degree">بكالوريوس</div>
+        <div class="edu-field" data-ar="إدارة المستشفيات والمؤسسات الصحية" data-en="Hospital & Health Institutions Management">إدارة المستشفيات والمؤسسات الصحية</div>
+      </div>
+      <div class="edu-card animate-on-scroll">
+        <div class="edu-icon">🔬</div>
+        <div class="edu-degree" data-ar="دبلوم عالي" data-en="Higher Diploma">دبلوم عالي</div>
+        <div class="edu-field" data-ar="مختبرات طبية وإدارة مستشفيات" data-en="Medical Laboratories & Hospital Management">مختبرات طبية وإدارة مستشفيات</div>
+      </div>
+      <div class="edu-card animate-on-scroll">
+        <div class="edu-icon">🩺</div>
+        <div class="edu-degree" data-ar="دبلوم عالي" data-en="Higher Diploma">دبلوم عالي</div>
+        <div class="edu-field" data-ar="مساعد طبيب" data-en="Physician Assistant">مساعد طبيب</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="neon-divider"></div>
+
+  <section class="section" id="skills">
+    <div class="section-header">
+      <span class="section-label" data-ar="الخبرات والقدرات" data-en="Expertise & Capabilities">الخبرات والقدرات</span>
+      <h2 class="section-title" data-ar="المهارات المهنية" data-en="Professional Skills">المهارات المهنية</h2>
+      <p class="section-subtitle" data-ar="مجموعة متكاملة من المهارات التقنية والإدارية والطبية" data-en="A comprehensive set of technical, administrative, and medical skills">مجموعة متكاملة من المهارات التقنية والإدارية والطبية</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-category animate-on-scroll">
+        <div class="skill-cat-title"><i class="fas fa-hospital" style="color:var(--neon-cyan)"></i><span data-ar="الإدارة الصحية" data-en="Health Management">الإدارة الصحية</span></div>
+        <div class="skill-item"><div class="skill-header"><span class="skill-name" data-ar="إدارة المستشفيات" data-en="Hospital Management">إدارة المستشفيات</span><span class="skill-percent">95%</span></div><div class="skill-bar"><div class="skill-fill" data-width="95"></div></div></div>
+        <div class="skill-item"><div class="skill-header"><span class="skill-name" data-ar="إدارة الأصول" data-en="Asset Management">إدارة الأصول</span><span class="skill-percent">90%</span></div><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+        <div class="skill-item"><div class="skill-header"><span class="skill-name" data-ar="الجرد الإلكتروني" data-en="Electronic Inventory">الجرد الإلكتروني</span><span class="skill-percent">92%</span></div><div class="skill-bar"><div class="skill-fill" data-width="92"></div></div></div>
+      </div>
+      <div class="skill-category animate-on-scroll">
+        <div class="skill-cat-title"><i class="fas fa-code" style="color:var(--neon-magenta)"></i><span data-ar="التطوير التقني" data-en="Tech Development">التطوير التقني</span></div>
+        <div class="skill-item"><div class="skill-header"><span class="skill-name" data-ar="تطوير الويب" data-en="Web Development">تطوير الويب</span><span class="skill-percent">88%</span></div><div class="skill-bar"><div class="skill-fill" data-width="88"></div></div></div>
+        <div class="skill-item"><div class="skill-header"><span class="skill-name" data-ar="أنظمة المعلومات الصحية" data-en="Health Information Systems">أنظمة المعلومات الصحية</span><span class="skill-percent">93%</span></div><div class="skill-bar"><div class="skill-fill" data-width="93"></div></div></div>
+        <div class="skill-item"><div class="skill-header"><span class="skill-name" data-ar="تطبيقات PWA" data-en="PWA Applications">تطبيقات PWA</span><span class="skill-percent">85%</span></div><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+      </div>
+      <div class="skill-category animate-on-scroll">
+        <div class="skill-cat-title"><i class="fas fa-microscope" style="color:var(--neon-lime)"></i><span data-ar="المختبرات الطبية" data-en="Medical Laboratory">المختبرات الطبية</span></div>
+        <div class="skill-item"><div class="skill-header"><span class="skill-name" data-ar="تحليل المختبرات" data-en="Lab Analysis">تحليل المختبرات</span><span class="skill-percent">94%</span></div><div class="skill-bar"><div class="skill-fill" data-width="94"></div></div></div>
+        <div class="skill-item"><div class="skill-header"><span class="skill-name" data-ar="تفسير التحاليل" data-en="Test Interpretation">تفسير التحاليل</span><span class="skill-percent">91%</span></div><div class="skill-bar"><div class="skill-fill" data-width="91"></div></div></div>
+        <div class="skill-item"><div class="skill-header"><span class="skill-name" data-ar="الإسعافات الأولية" data-en="First Aid">الإسعافات الأولية</span><span class="skill-percent">96%</span></div><div class="skill-bar"><div class="skill-fill" data-width="96"></div></div></div>
+      </div>
+      <div class="skill-category animate-on-scroll">
+        <div class="skill-cat-title"><i class="fas fa-bullhorn" style="color:var(--neon-gold)"></i><span data-ar="التسويق الرقمي" data-en="Digital Marketing">التسويق الرقمي</span></div>
+        <div class="skill-item"><div class="skill-header"><span class="skill-name" data-ar="إدارة المحتوى" data-en="Content Management">إدارة المحتوى</span><span class="skill-percent">87%</span></div><div class="skill-bar"><div class="skill-fill" data-width="87"></div></div></div>
+        <div class="skill-item"><div class="skill-header"><span class="skill-name" data-ar="تصميم البروشورات" data-en="Brochure Design">تصميم البروشورات</span><span class="skill-percent">89%</span></div><div class="skill-bar"><div class="skill-fill" data-width="89"></div></div></div>
+        <div class="skill-item"><div class="skill-header"><span class="skill-name" data-ar="التصميم التفاعلي" data-en="Interactive Design">التصميم التفاعلي</span><span class="skill-percent">90%</span></div><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="neon-divider"></div>
+
+  <section class="section" id="projects">
+    <div class="section-header">
+      <span class="section-label" data-ar="المحفظة المهنية" data-en="Professional Portfolio">المحفظة المهنية</span>
+      <h2 class="section-title" data-ar="الإنجازات والمشاريع" data-en="Achievements & Projects">الإنجازات والمشاريع</h2>
+      <p class="section-subtitle" data-ar="مشاريع رقمية وطبية وتعليمية متميزة" data-en="Outstanding digital, medical, and educational projects">مشاريع رقمية وطبية وتعليمية متميزة</p>
+    </div>
+    <div class="achievements-grid">
+      <div class="achievement-card animate-on-scroll">
+        <div class="ach-image-wrapper"><img src="images/first-aid.jpg" alt="First Aid Guide" class="ach-image" onerror="this.style.display='none';this.parentElement.style.display='none';this.parentElement.nextElementSibling.style.paddingTop='25px';"></div>
+        <div class="ach-header">
+          <div class="ach-icon"><i class="fas fa-first-aid"></i></div>
+          <div class="ach-title" data-ar="دليل الإسعافات الأولية" data-en="First Aid Guide">دليل الإسعافات الأولية</div>
+          <div class="ach-subtitle" data-ar="إصدار تعليمي طبي" data-en="Medical Educational Publication">إصدار تعليمي طبي</div>
+        </div>
+        <div class="ach-body" data-ar="إعداد ونشر دليل شامل للإسعافات الأولية يغطي أهم الإجراءات الطارئة والإسعافات الأساسية للحالات الحرجة بأسلوب علمي مبسط." data-en="Developed and published a comprehensive first aid guide covering critical emergency procedures and basic life support in a simplified scientific approach.">إعداد ونشر دليل شامل للإسعافات الأولية يغطي أهم الإجراءات الطارئة والإسعافات الأساسية للحالات الحرجة بأسلوب علمي مبسط.</div>
+        <div class="ach-footer"><div class="ach-tags"><span class="tag">First Aid</span><span class="tag">Medical Guide</span><span class="tag">Emergency</span></div><span class="status-badge status-completed" data-ar="مكتمل" data-en="Completed">مكتمل</span></div>
+      </div>
+      <div class="achievement-card animate-on-scroll">
+        <div class="ach-image-wrapper"><img src="images/asset-app.jpg" alt="Asset Management" class="ach-image" onerror="this.style.display='none';this.parentElement.style.display='none';this.parentElement.nextElementSibling.style.paddingTop='25px';"></div>
+        <div class="ach-header">
+          <div class="ach-icon"><i class="fas fa-building-columns"></i></div>
+          <div class="ach-title" data-ar="تطبيق إدارة الأصول" data-en="Asset Management App">تطبيق إدارة الأصول</div>
+          <div class="ach-subtitle" data-ar="المعهد الوطني للعلوم الإدارية - فرع إب" data-en="NIAS - Ibb Branch">المعهد الوطني للعلوم الإدارية - فرع إب</div>
+        </div>
+        <div class="ach-body" data-ar="تصميم وتطوير نظام رقمي متكامل لإدارة أصول المعهد الوطني للعلوم الإدارية بفرع إب، يشمل الجرد والتتبع والتقارير الإحصائية." data-en="Designed and developed a comprehensive digital asset management system for NIAS Ibb Branch including inventory, tracking, and statistical reporting.">تصميم وتطوير نظام رقمي متكامل لإدارة أصول المعهد الوطني للعلوم الإدارية بفرع إب، يشمل الجرد والتتبع والتقارير الإحصائية.</div>
+        <div class="ach-footer"><div class="ach-tags"><span class="tag">Assets</span><span class="tag">Management</span><span class="tag">NIAS</span></div><span class="status-badge status-completed" data-ar="مكتمل" data-en="Completed">مكتمل</span></div>
+      </div>
+      <div class="achievement-card animate-on-scroll">
+        <div class="ach-image-wrapper"><img src="images/nias-website.jpg" alt="NIAS Website" class="ach-image" onerror="this.style.display='none';this.parentElement.style.display='none';this.parentElement.nextElementSibling.style.paddingTop='25px';"></div>
+        <div class="ach-header">
+          <div class="ach-icon"><i class="fas fa-globe"></i></div>
+          <div class="ach-title" data-ar="موقع المعهد الوطني للعلوم الإدارية" data-en="NIAS Official Website">موقع المعهد الوطني للعلوم الإدارية</div>
+          <div class="ach-subtitle" data-ar="فرع إب - الجمهورية اليمنية" data-en="Ibb Branch - Republic of Yemen">فرع إب - الجمهورية اليمنية</div>
+        </div>
+        <div class="ach-body" data-ar="إنشاء وتطوير الموقع الإلكتروني الرسمي للمعهد الوطني للعلوم الإدارية فرع إب ليكون واجهة رقمية احترافية تعكس هوية المعهد." data-en="Created and developed the official website for the National Institute of Administrative Sciences Ibb Branch as a professional digital interface reflecting the institute's identity.">إنشاء وتطوير الموقع الإلكتروني الرسمي للمعهد الوطني للعلوم الإدارية فرع إب ليكون واجهة رقمية احترافية تعكس هوية المعهد.</div>
+        <div class="ach-footer"><div class="ach-tags"><span class="tag">Web Development</span><span class="tag">NIAS</span><span class="tag">Official</span></div><span class="status-badge status-completed" data-ar="مكتمل" data-en="Completed">مكتمل</span></div>
+      </div>
+      <div class="achievement-card animate-on-scroll">
+        <div class="ach-image-wrapper"><img src="images/cardio-system.jpg" alt="Cardio System" class="ach-image" onerror="this.style.display='none';this.parentElement.style.display='none';this.parentElement.nextElementSibling.style.paddingTop='25px';"></div>
+        <div class="ach-header">
+          <div class="ach-icon"><i class="fas fa-heart-pulse"></i></div>
+          <div class="ach-title" data-ar="نظام Cardio System" data-en="Cardio System">نظام Cardio System</div>
+          <div class="ach-subtitle" data-ar="هيئة مستشفى الثورة العام - إب" data-en="Al-Thawra General Hospital - Ibb">هيئة مستشفى الثورة العام - إب</div>
+        </div>
+        <div class="ach-body" data-ar="تطوير نظام متخصص لإدارة وحدة القسطرة والأنظمة القلبية بمستشفى الثورة العام بإب لتحسين جودة الرعاية الصحية وتتبع المرضى." data-en="Developed a specialized system for catheterization and cardiac unit management at Al-Thawra General Hospital Ibb to improve healthcare quality and patient tracking.">تطوير نظام متخصص لإدارة وحدة القسطرة والأنظمة القلبية بمستشفى الثورة العام بإب لتحسين جودة الرعاية الصحية وتتبع المرضى.</div>
+        <div class="ach-footer"><div class="ach-tags"><span class="tag">Cardiology</span><span class="tag">Hospital System</span><span class="tag">Healthcare</span></div><span class="status-badge status-completed" data-ar="مكتمل" data-en="Completed">مكتمل</span></div>
+      </div>
+      <div class="achievement-card animate-on-scroll">
+        <div class="ach-image-wrapper"><img src="images/health-reports.jpg" alt="Health Reports" class="ach-image" onerror="this.style.display='none';this.parentElement.style.display='none';this.parentElement.nextElementSibling.style.paddingTop='25px';"></div>
+        <div class="ach-header">
+          <div class="ach-icon"><i class="fas fa-file-medical"></i></div>
+          <div class="ach-title" data-ar="نظام التقارير الصحية الرقمي" data-en="Digital Health Reports System">نظام التقارير الصحية الرقمي</div>
+          <div class="ach-subtitle" data-ar="نظام معلومات صحي متكامل" data-en="Integrated Health Information System">نظام معلومات صحي متكامل</div>
+        </div>
+        <div class="ach-body" data-ar="بناء منصة رقمية لإدارة التقارير الطبية والمختبرية بشكل إلكتروني شامل، يدعم توليد التقارير والتحليلات الإحصائية والأرشفة الذكية." data-en="Built a digital platform for comprehensive electronic management of medical and laboratory reports with analytics, statistics generation, and smart archiving.">بناء منصة رقمية لإدارة التقارير الطبية والمختبرية بشكل إلكتروني شامل، يدعم توليد التقارير والتحليلات الإحصائية والأرشفة الذكية.</div>
+        <div class="ach-footer"><div class="ach-tags"><span class="tag">Digital Health</span><span class="tag">Reports</span><span class="tag">Analytics</span></div><span class="status-badge status-completed" data-ar="مكتمل" data-en="Completed">مكتمل</span></div>
+      </div>
+      <div class="achievement-card animate-on-scroll">
+        <div class="ach-image-wrapper"><img src="images/inventory.jpg" alt="Inventory" class="ach-image" onerror="this.style.display='none';this.parentElement.style.display='none';this.parentElement.nextElementSibling.style.paddingTop='25px';"></div>
+        <div class="ach-header">
+          <div class="ach-icon"><i class="fas fa-boxes-stacked"></i></div>
+          <div class="ach-title" data-ar="الجرد الإلكتروني" data-en="Electronic Inventory System">الجرد الإلكتروني</div>
+          <div class="ach-subtitle" data-ar="نظام رقمي للمخازن والموارد" data-en="Digital Warehouse & Resources System">نظام رقمي للمخازن والموارد</div>
+        </div>
+        <div class="ach-body" data-ar="تصميم نظام جرد إلكتروني ذكي لإدارة المخزون والموارد الطبية والإدارية مع تنبيهات آلية للنواقص والصلاحيات وإدارة الموردين." data-en="Designed a smart electronic inventory system for managing medical and administrative stock with automated alerts for shortages, expiration, and supplier management.">تصميم نظام جرد إلكتروني ذكي لإدارة المخزون والموارد الطبية والإدارية مع تنبيهات آلية للنواقص والصلاحيات وإدارة الموردين.</div>
+        <div class="ach-footer"><div class="ach-tags"><span class="tag">Inventory</span><span class="tag">Automation</span><span class="tag">Smart Alerts</span></div><span class="status-badge status-completed" data-ar="مكتمل" data-en="Completed">مكتمل</span></div>
+      </div>
+      <div class="achievement-card animate-on-scroll">
+        <div class="ach-image-wrapper"><img src="images/quran-app.jpg" alt="Quran App" class="ach-image" onerror="this.style.display='none';this.parentElement.style.display='none';this.parentElement.nextElementSibling.style.paddingTop='25px';"></div>
+        <div class="ach-header">
+          <div class="ach-icon"><i class="fas fa-book-quran"></i></div>
+          <div class="ach-title" data-ar="تطبيق ويب تقدمي للقرآن الكريم" data-en="Progressive Quran Web App">تطبيق ويب تقدمي للقرآن الكريم</div>
+          <div class="ach-subtitle" data-ar="مرئي ومسموع - PWA" data-en="Audio & Visual - PWA">مرئي ومسموع - PWA</div>
+        </div>
+        <div class="ach-body" data-ar="تطوير تطبيق ويب تقدمي (PWA) للقرآن الكريم يدعم القراءة المرئية والاستماع الصوتي مع واجهة تفاعلية سلسة وتشغيل بدون إنترنت." data-en="Developed a Progressive Web App (PWA) for the Holy Quran supporting visual reading and audio listening with a smooth interactive interface and offline playback.">تطوير تطبيق ويب تقدمي (PWA) للقرآن الكريم يدعم القراءة المرئية والاستماع الصوتي مع واجهة تفاعلية سلسة وتشغيل بدون إنترنت.</div>
+        <div class="ach-footer"><div class="ach-tags"><span class="tag">PWA</span><span class="tag">Quran</span><span class="tag">Audio</span><span class="tag">Offline</span></div><span class="status-badge status-completed" data-ar="مكتمل" data-en="Completed">مكتمل</span></div>
+      </div>
+      <div class="achievement-card animate-on-scroll">
+        <div class="ach-image-wrapper"><img src="images/estsharion.jpg" alt="Estsharion" class="ach-image" onerror="this.style.display='none';this.parentElement.style.display='none';this.parentElement.nextElementSibling.style.paddingTop='25px';"></div>
+        <div class="ach-header">
+          <div class="ach-icon"><i class="fas fa-rocket"></i></div>
+          <div class="ach-title" data-ar="مشاريع تحت التجهيز" data-en="Projects In Progress">مشاريع تحت التجهيز</div>
+          <div class="ach-subtitle" data-ar="المنصات الطبية والمجلات الرقمية" data-en="Medical Platforms & Digital Magazines">المنصات الطبية والمجلات الرقمية</div>
+        </div>
+        <div class="ach-body" data-ar="العمل على تطوير منصات طبية شاملة (مثل منصة استشاريون) ومجلات رقمية متخصصة في المجال الصحي والإداري مع دعم الاستشارات عن بُعد." data-en="Working on developing comprehensive medical platforms (such as Estsharion) and specialized digital magazines in health and management fields with remote consultation support.">العمل على تطوير منصات طبية شاملة (مثل منصة استشاريون) ومجلات رقمية متخصصة في المجال الصحي والإداري مع دعم الاستشارات عن بُعد.</div>
+        <div class="ach-footer"><div class="ach-tags"><span class="tag">Medical Platform</span><span class="tag">Estsharion</span><span class="tag">Digital Magazine</span><span class="tag">Telemedicine</span></div><span class="status-badge status-progress" data-ar="قيد التطوير" data-en="In Progress">قيد التطوير</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="neon-divider"></div>
+
+  <section class="section contact-section" id="contact">
+    <div class="section-header">
+      <span class="section-label" data-ar="لنتحدث" data-en="Let's Talk">لنتحدث</span>
+      <h2 class="section-title" data-ar="تواصل معي" data-en="Get In Touch">تواصل معي</h2>
+      <p class="section-subtitle" data-ar="متاح للاستشارات والتعاون في المشاريع الطبية والتقنية" data-en="Available for consultations and collaboration in medical and tech projects">متاح للاستشارات والتعاون في المشاريع الطبية والتقنية</p>
+    </div>
+    <div class="contact-grid">
+      <a href="mailto:Kaidngat4@gmail.com" class="contact-card email animate-on-scroll">
+        <i class="fas fa-envelope" style="color:var(--neon-magenta)"></i>
+        <div class="contact-label" data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</div>
+        <div class="contact-value">Kaidngat4@gmail.com</div>
+      </a>
+      <a href="https://wa.me/967776572227" target="_blank" class="contact-card whatsapp animate-on-scroll">
+        <i class="fab fa-whatsapp" style="color:var(--neon-lime)"></i>
+        <div class="contact-label" data-ar="واتساب" data-en="WhatsApp">واتساب</div>
+        <div class="contact-value">+967 776 572 227</div>
+      </a>
+      <div class="contact-card animate-on-scroll" style="cursor:default">
+        <i class="fas fa-location-dot" style="color:var(--neon-gold)"></i>
+        <div class="contact-label" data-ar="الموقع" data-en="Location">الموقع</div>
+        <div class="contact-value" data-ar="إب - الجمهورية اليمنية" data-en="Ibb - Republic of Yemen">إب - الجمهورية اليمنية</div>
+      </div>
+    </div>
+  </section>
+
+ <footer class="main-footer">
+  <div class="footer-brand">DR. SALAH AL-AHDAL</div>
+  <p data-ar="© 2026 د. صلاح الأهدل - جميع الحقوق محفوظة" data-en="© 2026 Dr. Salah Al-Ahdal - All Rights Reserved">
+    © 2026 د. صلاح الأهدل - جميع الحقوق محفوظة
+  </p>
+  <!-- تم تعديل النص هنا -->
+  <p data-ar="مطور خدمات طبية ورقمية" data-en="Medical & Digital Services Developer" style="margin-top:8px; font-size:0.8rem; color: #aaa; direction: ltr;">
+    مطور خدمات طبية ورقمية
+  </p>
+  <div class="footer-tagline">DESIGNED WITH PASSION & PRECISION</div>
+</footer>
+
+  <script>
+const canvas=document.getElementById('particles-canvas');const ctx=canvas.getContext('2d');let particles=[];let mouseX=0;let mouseY=0;function resizeCanvas(){canvas.width=window.innerWidth;canvas.height=window.innerHeight;}resizeCanvas();window.addEventListener('resize',resizeCanvas);class Particle{constructor(){this.reset();}reset(){this.x=Math.random()*canvas.width;this.y=Math.random()*canvas.height;this.size=Math.random()*2.5+0.5;this.speedX=(Math.random()-0.5)*0.6;this.speedY=(Math.random()-0.5)*0.6;this.opacity=Math.random()*0.6+0.1;const colors=['0, 243, 255','255, 0, 255','57, 255, 20','255, 215, 0','255, 157, 0','176, 38, 255'];this.color=colors[Math.floor(Math.random()*colors.length)];this.angle=Math.random()*Math.PI*2;this.spin=(Math.random()-0.5)*0.02;}update(){this.x+=this.speedX;this.y+=this.speedY;this.angle+=this.spin;const dx=mouseX-this.x;const dy=mouseY-this.y;const dist=Math.sqrt(dx*dx+dy*dy);if(dist<<150){const force=(150-dist)/150;this.x-=dx*force*0.02;this.y-=dy*force*0.02;}if(this.x<-50||this.x>canvas.width+50||this.y<-50||this.y>canvas.height+50){this.reset();}}draw(){ctx.save();ctx.translate(this.x,this.y);ctx.rotate(this.angle);ctx.shadowBlur=15;ctx.shadowColor=`rgba(${this.color},${this.opacity*0.5})`;ctx.beginPath();ctx.arc(0,0,this.size,0,Math.PI*2);ctx.fillStyle=`rgba(${this.color},${this.opacity})`;ctx.fill();ctx.restore();}}function initParticles(){particles=[];const particleCount=Math.min(window.innerWidth/6,200);for(let i=0;i<<particleCount;i++){particles.push(new Particle());}}function animateParticles(){ctx.clearRect(0,0,canvas.width,canvas.height);particles.forEach(p=>{p.update();p.draw();});particles.forEach((p1,i)=>{particles.slice(i+1).forEach(p2=>{const dx=p1.x-p2.x;const dy=p1.y-p2.y;const dist=Math.sqrt(dx*dx+dy*dy);if(dist<<140){ctx.beginPath();const opacity=0.08*(1-dist/140);ctx.strokeStyle=`rgba(0,243,255,${opacity})`;ctx.lineWidth=0.6;ctx.moveTo(p1.x,p1.y);ctx.lineTo(p2.x,p2.y);ctx.stroke();}});});requestAnimationFrame(animateParticles);}initParticles();animateParticles();document.addEventListener('mousemove',(e)=>{mouseX=e.clientX;mouseY=e.clientY;});const typingTexts={ar:['مطور أنظمة صحية رقمية','إداري مستشفيات معتمد','مختص في المختبرات الطبية','مبدع في الحلول التقنية','مشرف على المنصات الطبية','باحث في الإدارة الصحية'],en:['Digital Health Systems Developer','Certified Hospital Administrator','Medical Laboratory Specialist','Creative Tech Solutions Architect','Medical Platforms Supervisor','Health Management Researcher']};let currentLang='ar';let textIndex=0;let charIndex=0;let isDeleting=false;let typingSpeed=100;const typingElement=document.getElementById('typing-text');function typeEffect(){const currentTexts=typingTexts[currentLang];const currentText=currentTexts[textIndex];if(isDeleting){typingElement.textContent=currentText.substring(0,charIndex-1);charIndex--;typingSpeed=40;}else{typingElement.textContent=currentText.substring(0,charIndex+1);charIndex++;typingSpeed=100;}if(!isDeleting&&charIndex===currentText.length){isDeleting=true;typingSpeed=2500;}else if(isDeleting&&charIndex===0){isDeleting=false;textIndex=(textIndex+1)%currentTexts.length;typingSpeed=600;}setTimeout(typeEffect,typingSpeed);}typeEffect();function setLang(lang){currentLang=lang;document.body.classList.toggle('lang-en',lang==='en');document.documentElement.dir=lang==='en'?'ltr':'rtl';document.documentElement.lang=lang;document.querySelectorAll('.lang-btn').forEach(btn=>{btn.classList.toggle('active',btn.dataset.lang===lang);});document.querySelectorAll('[data-ar][data-en]').forEach(el=>{el.textContent=el.getAttribute(`data-${lang}`);});textIndex=0;charIndex=0;isDeleting=false;typingElement.textContent='';}const observerOptions={threshold:0.1,rootMargin:'0px 0px -60px 0px'};const observer=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');if(entry.target.classList.contains('skill-category')){entry.target.querySelectorAll('.skill-fill').forEach(bar=>{const width=bar.dataset.width;setTimeout(()=>{bar.style.width=width+'%';},300);});}}});},observerOptions);document.querySelectorAll('.animate-on-scroll').forEach(el=>{observer.observe(el);});const nav=document.querySelector('.main-nav');let lastScroll=0;window.addEventListener('scroll',()=>{const currentScroll=window.pageYOffset;if(currentScroll>100){nav.style.background='rgba(2, 2, 2, 0.95)';nav.style.boxShadow='0 5px 30px rgba(0,0,0,0.5)';}else{nav.style.background='rgba(2, 2, 2, 0.8)';nav.style.boxShadow='none';}lastScroll=currentScroll;});document.querySelectorAll('a[href^="#"]').forEach(anchor=>{anchor.addEventListener('click',function(e){e.preventDefault();const target=document.querySelector(this.getAttribute('href'));if(target){target.scrollIntoView({behavior:'smooth',block:'start'});}});});if(window.innerWidth>768){let lastTrail=0;document.addEventListener('mousemove',(e)=>{const now=Date.now();if(now-lastTrail>40){createCursorTrail(e.clientX,e.clientY);lastTrail=now;}});}function createCursorTrail(x,y){const trail=document.createElement('div');trail.style.cssText=`position:fixed;width:5px;height:5px;background:var(--neon-cyan);border-radius:50%;pointer-events:none;z-index:9999;left:${x}px;top:${y}px;box-shadow:0 0 10px var(--neon-cyan),0 0 20px var(--neon-cyan);transition:all 0.4s ease;opacity:0.8;`;document.body.appendChild(trail);requestAnimationFrame(()=>{trail.style.opacity='0';trail.style.transform='scale(0)';});setTimeout(()=>trail.remove(),400);}document.querySelectorAll('.edu-card, .achievement-card, .contact-card').forEach(card=>{card.addEventListener('mousemove',(e)=>{const rect=card.getBoundingClientRect();const x=e.clientX-rect.left;const y=e.clientY-rect.top;const centerX=rect.width/2;const centerY=rect.height/2;const rotateX=(y-centerY)/20;const rotateY=(centerX-x)/20;card.style.transform=`perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;});card.addEventListener('mouseleave',()=>{card.style.transform='';});});const sections=document.querySelectorAll('section[id]');const navLinks=document.querySelectorAll('.nav-links a');window.addEventListener('scroll',()=>{let current='';sections.forEach(section=>{const sectionTop=section.offsetTop;const sectionHeight=section.clientHeight;if(pageYOffset>=sectionTop-200){current=section.getAttribute('id');}});navLinks.forEach(link=>{link.style.color='';link.style.textShadow='';if(link.getAttribute('href')==='#'+current){link.style.color='var(--neon-cyan)';link.style.textShadow='0 0 10px rgba(0, 243, 255, 0.5)';}});});window.addEventListener('load',()=>{document.body.style.opacity='0';document.body.style.transition='opacity 0.5s ease';setTimeout(()=>{document.body.style.opacity='1';},100);});console.log('%c🚀 Dr. Salah Al-Ahdal CV','color: #00f3ff; font-size: 20px; font-weight: bold;');console.log('%c✨ Global Neon Professional Edition Loaded','color: #ff00ff; font-size: 14px;');
+  </script>
+</body>
+</html>
